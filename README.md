@@ -1,4 +1,4 @@
-## ⚛️📱 React Native Starter with
+## ⚛️📱 React Native 0.70 Starter with
 - Typescript v4.8.x
 - [NativeBase v3.4.x](https://nativebase.io)
 - [React Navigation v6](https://reactnavigation.org/docs/getting-started)
