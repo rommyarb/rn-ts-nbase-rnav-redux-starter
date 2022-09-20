@@ -1,8 +1,8 @@
 import React from 'react';
-import {Box} from 'native-base';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {useNavigation} from '@react-navigation/native';
-import {SafeAreaView, StatusBar} from 'react-native';
+import { Box } from 'native-base';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
+import { SafeAreaView, StatusBar } from 'react-native';
 
 const MainPage = () => {
   const navigation: NativeStackNavigationProp<any, any> = useNavigation();
