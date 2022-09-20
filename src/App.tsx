@@ -8,7 +8,7 @@ import store, { persistor } from './redux/store';
 import FirstScreen from './screens/FirstScreen';
 import SecondScreen from './screens/SecondScreen';
 
-const Stack = createNativeStackNavigator();
+const NativeStackNav = createNativeStackNavigator();
 
 const App = () => {
   return (
@@ -16,20 +16,20 @@ const App = () => {
       <PersistGate loading={null} persistor={persistor}>
         <NativeBaseProvider>
           <NavigationContainer>
-            <Stack.Navigator
+            <NativeStackNav.Navigator
               initialRouteName="MainPage"
               screenOptions={{ headerShown: false, orientation: 'portrait' }}>
-              <Stack.Screen
-                name="My First Screen"
+              <NativeStackNav.Screen
+                name="FirstScreen"
                 component={FirstScreen}
                 options={{ animation: 'slide_from_right' }}
               />
-              <Stack.Screen
-                name="My Second Screen"
+              <NativeStackNav.Screen
+                name="SecondScreen"
                 component={SecondScreen}
                 options={{ animation: 'slide_from_left' }}
               />
-            </Stack.Navigator>
+            </NativeStackNav.Navigator>
           </NavigationContainer>
         </NativeBaseProvider>
       </PersistGate>
